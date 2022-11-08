@@ -115,7 +115,7 @@ def main_menu():
         screen.blit(game_title2, (game_title2.get_rect(center = screen.get_rect().center)[0]+150, game_title2.get_rect(center = screen.get_rect().center)[1]-65))
         game_title3 = game_font.render('Camo Clicker', True, BLACK)
         screen.blit(game_title3, (game_title3.get_rect(center = screen.get_rect().center)[0]-145, game_title3.get_rect(center = screen.get_rect().center)[1]+85))
-        game_title4 = game_font.render('Asteroid Attack', True, BLACK)
+        game_title4 = game_font.render('Roid Raid', True, BLACK)
         screen.blit(game_title4, (game_title4.get_rect(center = screen.get_rect().center)[0]+150, game_title4.get_rect(center = screen.get_rect().center)[1]+85))
 
 
@@ -168,7 +168,7 @@ def game_num1():
 
     #Initializations
     points = 0
-    x_speed = 1
+    x_speed = 4
     x_distance = 981
     lives = 3
     life = True
@@ -202,25 +202,25 @@ def game_num1():
     asteroid_20_pos = [-30, random.randrange(0, 481)]
 
     #Speed of Asteroids
-    asteroid_1_move = random.randint(1, x_speed)
-    asteroid_2_move = random.randint(1, x_speed)
-    asteroid_3_move = random.randint(1, x_speed)
-    asteroid_4_move = random.randint(1, x_speed)
-    asteroid_5_move = random.randint(1, x_speed)
-    asteroid_6_move= random.randint(1, x_speed)
-    asteroid_7_move = random.randint(1, x_speed)
-    asteroid_8_move = random.randint(1, x_speed)
-    asteroid_9_move = random.randint(1, x_speed)
-    asteroid_10_move = random.randint(1, x_speed)
-    asteroid_11_move = random.randint(1, x_speed)
-    asteroid_12_move = random.randint(1, x_speed)
-    asteroid_13_move = random.randint(1, x_speed)
-    asteroid_14_move = random.randint(1, x_speed)
-    asteroid_15_move = random.randint(1, x_speed)
-    asteroid_17_move = random.randint(1, x_speed)
-    asteroid_18_move = random.randint(1, x_speed)
-    asteroid_19_move = random.randint(1, x_speed)
-    asteroid_20_pos_move = random.randint(1, x_speed)
+    asteroid_1_move = random.randint(3, x_speed)
+    asteroid_2_move = random.randint(3, x_speed)
+    asteroid_3_move = random.randint(3, x_speed)
+    asteroid_4_move = random.randint(3, x_speed)
+    asteroid_5_move = random.randint(3, x_speed)
+    asteroid_6_move= random.randint(3, x_speed)
+    asteroid_7_move = random.randint(3, x_speed)
+    asteroid_8_move = random.randint(3, x_speed)
+    asteroid_9_move = random.randint(3, x_speed)
+    asteroid_10_move = random.randint(3, x_speed)
+    asteroid_11_move = random.randint(3, x_speed)
+    asteroid_12_move = random.randint(3, x_speed)
+    asteroid_13_move = random.randint(3, x_speed)
+    asteroid_14_move = random.randint(3, x_speed)
+    asteroid_15_move = random.randint(3, x_speed)
+    asteroid_17_move = random.randint(3, x_speed)
+    asteroid_18_move = random.randint(3, x_speed)
+    asteroid_19_move = random.randint(3, x_speed)
+    asteroid_20_pos_move = random.randint(3, x_speed)
 
     #Asteroid Size
     roid_size_1 = random.randrange(10, 30)
@@ -333,8 +333,8 @@ def game_num1():
             
     # Speed + Spawn Mechanic
                 if asteroid_1_pos[0] <= -30 and asteroid_2_pos[0] <= -30 and asteroid_3_pos[0] <= -30 and asteroid_4_pos[0] <= -30 and asteroid_5_pos[0] <= -30 and asteroid_6_pos[0] <= -30 and asteroid_7_pos[0] <= -30 and asteroid_8_pos[0] <= -30 and asteroid_9_pos[0] <= -30 and asteroid_10_pos[0] <= -30 and asteroid_11_pos[0] <= -30 and asteroid_12_pos[0] <= -30 and asteroid_13_pos[0] <= -30 and asteroid_14_pos[0] <= -30 and asteroid_15_pos[0] <= -30 and asteroid_16_pos[0] <= -30 and asteroid_17_pos[0] <= -30 and asteroid_18_pos[0] <= -30 and asteroid_19_pos[0] <= -30 and asteroid_20_pos[0] <= -30: #Checks to see if asteroids passed
-                    if x_speed <= 10:
-                        x_speed += 1
+                    if x_speed <= 24:
+                        x_speed += 2
                     points += 9
                     x_distance -= 10 #Distance Asteroid can be spawned in
             
@@ -376,26 +376,26 @@ def game_num1():
                 
                         
     #When Level passes, speed changes again
-                    asteroid_1_move = random.randint(1, x_speed)
-                    asteroid_2_move = random.randint(1, x_speed)
-                    asteroid_3_move = random.randint(1, x_speed)
-                    asteroid_4_move = random.randint(1, x_speed)
-                    asteroid_5_move = random.randint(1, x_speed)
-                    asteroid_6_move= random.randint(1, x_speed)
-                    asteroid_7_move = random.randint(1, x_speed)
-                    asteroid_8_move = random.randint(1, x_speed)
-                    asteroid_9_move = random.randint(1, x_speed)
-                    asteroid_10_move = random.randint(1, x_speed)
-                    asteroid_11_move = random.randint(1, x_speed)
-                    asteroid_12_move = random.randint(1, x_speed)
-                    asteroid_13_move = random.randint(1, x_speed)
-                    asteroid_14_move = random.randint(1, x_speed)
-                    asteroid_15_move = random.randint(1, x_speed)
-                    asteroid_16_move = random.randint(1, x_speed)
-                    asteroid_17_move = random.randint(1, x_speed)
-                    asteroid_18_move = random.randint(1, x_speed)
-                    asteroid_19_move = random.randint(1, x_speed)
-                    asteroid_20_move = random.randint(1, x_speed)
+                    asteroid_1_move = random.randint(3, x_speed)
+                    asteroid_2_move = random.randint(3, x_speed)
+                    asteroid_3_move = random.randint(3, x_speed)
+                    asteroid_4_move = random.randint(3, x_speed)
+                    asteroid_5_move = random.randint(3, x_speed)
+                    asteroid_6_move= random.randint(3, x_speed)
+                    asteroid_7_move = random.randint(3, x_speed)
+                    asteroid_8_move = random.randint(3, x_speed)
+                    asteroid_9_move = random.randint(3, x_speed)
+                    asteroid_10_move = random.randint(3, x_speed)
+                    asteroid_11_move = random.randint(3, x_speed)
+                    asteroid_12_move = random.randint(3, x_speed)
+                    asteroid_13_move = random.randint(3, x_speed)
+                    asteroid_14_move = random.randint(3, x_speed)
+                    asteroid_15_move = random.randint(3, x_speed)
+                    asteroid_16_move = random.randint(3, x_speed)
+                    asteroid_17_move = random.randint(3, x_speed)
+                    asteroid_18_move = random.randint(3, x_speed)
+                    asteroid_19_move = random.randint(3, x_speed)
+                    asteroid_20_move = random.randint(3, x_speed)
                         
     #Astronaut
                 pygame.draw.ellipse(screen, ASTRONAUT, (astro_x - 5, astro_y - 10, 35, 23)) #Head
@@ -1149,7 +1149,7 @@ def game_num4():
             pygame.draw.rect(screen, EVERGLADE_GREEN, [220+5, 200+5, 200, 80])
             pygame.draw.rect(screen, PEA_GREEN, start_button)
             pygame.draw.rect(screen, EVERGLADE_GREEN, start_button, 1)
-            start_title = font.render("STARTGAME", True, WHITE)
+            start_title = font.render("START GAME", True, WHITE)
             screen.blit(start_title, (start_title.get_rect(center = screen.get_rect().center)[0], start_title.get_rect(center = screen.get_rect().center)[1]))
             if start_button.collidepoint((mx, my)):
                 if click:
