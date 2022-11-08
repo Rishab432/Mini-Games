@@ -115,7 +115,7 @@ def main_menu():
         screen.blit(game_title2, (game_title2.get_rect(center = screen.get_rect().center)[0]+150, game_title2.get_rect(center = screen.get_rect().center)[1]-65))
         game_title3 = game_font.render('Camo Clicker', True, BLACK)
         screen.blit(game_title3, (game_title3.get_rect(center = screen.get_rect().center)[0]-145, game_title3.get_rect(center = screen.get_rect().center)[1]+85))
-        game_title4 = game_font.render('Roid Raid', True, BLACK)
+        game_title4 = game_font.render('Asteroid Attack', True, BLACK)
         screen.blit(game_title4, (game_title4.get_rect(center = screen.get_rect().center)[0]+150, game_title4.get_rect(center = screen.get_rect().center)[1]+85))
 
 
